@@ -1,0 +1,8 @@
+#div_box {
+    background-image: url(../d73f062c31.jpg);
+    display: flex;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
