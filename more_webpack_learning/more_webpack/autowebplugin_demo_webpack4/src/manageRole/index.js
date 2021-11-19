@@ -1,18 +1,13 @@
-import {
-    HashRouter, Route, Switch
-} from "react-router-dom";
-import * as React from "react";
-import Manage from "./Manage/index.js";
 
-export default class ManageRole extends React.Component {
+import { render } from "react-dom"
+import * as React from "react";
+import ManageRole from "./manageRole/index.js";
+ class MainManageRole extends React.Component {
     render() {
         return (
-            <HashRouter>
-                <Switch>
-                    <Route path="/Manage" component={Manage} />
-                   
-                </Switch>
-            </HashRouter>
+           <ManageRole></ManageRole>
         )
     }
 }
+
+render(<MainManageRole /> , document.getElementById("app"))
